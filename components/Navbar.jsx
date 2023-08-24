@@ -1,14 +1,13 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { socials } from '../constants';
 import styles from '../styles';
 import { navVariants } from '../utils/motion';
 
 const Navbar = () => (
   <motion.nav
      variants={navVariants}
-     initial='show'
+     initial='hidden'
      whileInView='show'
      className={`${styles.xPaddings} py-8 relative`}
   >
@@ -27,17 +26,22 @@ const Navbar = () => (
 
         <div className='flex flex-row gap-5 z-0'>
 
-        {socials.map((social) =>(
-              <a href={social.link} target='_blank' className='inline-flex items-center'>
-                <img
-                  key={social.name}
-                  src={social.url}
-                  alt={social.name}
-                  className='w-[24px] h-[24px] object-contain cursor-pointer'
-                />
-              </a>
+        <a href='https://github.com/rmgutierrez' target='_blank' className='inline-flex items-center'>
+                  <img
+                    src='github-white.svg'
+                    alt='github'
+                    className='w-[24px] h-[24px] object-contain cursor-pointer'
+                  />
+                </a>
 
-            ))}
+
+            <a href='https://www.linkedin.com/in/raphael-gutierrez-b0a608261/' target='_blank' className='inline-flex items-center'>
+                  <img
+                    src='linkedin.svg'
+                    alt='github'
+                    className='w-[24px] h-[24px] object-contain cursor-pointer'
+                  />
+                </a>
 
         </div>
 

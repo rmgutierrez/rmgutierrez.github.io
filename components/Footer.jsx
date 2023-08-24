@@ -7,7 +7,7 @@ import styles from '../styles';
 import { footerVariants } from '../utils/motion';
 import Link from 'next/link';
 
-const CustomLink = ({href, title, className=''}) => {
+const CustomLink = ({href, title, className='', dir=''}) => {
   const router = useRouter();
   return(
       <Link href={href} target='_blank' className={`${className} relative group`}>
@@ -15,7 +15,7 @@ const CustomLink = ({href, title, className=''}) => {
 
           <span className={`
           h-[3px] inline-block bg-white 
-          absolute left-0 -bottom-0.5
+          absolute ${dir} -bottom-0.5
           group-hover:w-full transition-[width] ease duration-200
           ${router.asPath === href ? 'w-full' : 'w-0'}
           `}>&nbsp;</span>
@@ -23,21 +23,6 @@ const CustomLink = ({href, title, className=''}) => {
   )
 }
 
-const CustomLink2 = ({href, title, className=''}) => {
-  const router = useRouter();
-  return(
-      <Link href={href} target='_blank' className={`${className} relative group`}>
-          {title}
-
-          <span className={`
-          h-[3px] inline-block bg-white 
-          absolute right-0 -bottom-0.5
-          group-hover:w-full transition-[width] ease duration-200
-          ${router.asPath === href ? 'w-full' : 'w-0'}
-          `}>&nbsp;</span>
-      </Link>
-  )
-}
 
 const Footer = () => (
   <motion.footer
@@ -52,12 +37,12 @@ const Footer = () => (
       <div className='flex items-center justify-center flex-wrap gap-2 mb-3 '>
 
         <CustomLink href='mailto:rmbgutierrez1@gmail.com' title='contact' className='font-normal md:text-[34px] 
-        text-[14px] text-white opacity-70 hover:opacity-100 transition-all'/>
+        text-[14px] text-white opacity-70 hover:opacity-100 transition-all' dir='left-0'/>
 
         <p className='font-normal md:text-[34px] text-[14px] text-white opacity-70'> & </p>
 
-        <CustomLink2 href='/raph_resume.pdf' title='resume' className='font-normal md:text-[34px] text-[14px]
-         text-white opacity-70 hover:opacity-100 transition-all'/>
+        <CustomLink href='/raph_resume.pdf' title='resume' className='font-normal md:text-[34px] text-[14px]
+         text-white opacity-70 hover:opacity-100 transition-all' dir='right-0'/>
 
 
         {/* <h4 className='font-normal md:text-[34px] text-[14px] text-white opacity-70'>contact & resume</h4> */}
@@ -82,22 +67,28 @@ const Footer = () => (
 
 
           <div className='flex gap-4'>
-            {socials.map((social) =>(
-              <a href={social.link} target='_blank' className='inline-flex items-center'>
-                <img
-                  key={social.name}
-                  src={social.url}
-                  alt={social.name}
-                  className='w-[24px] h-[24px] object-contain cursor-pointer'
-                />
-              </a>
 
-            ))}
+            <a href='https://github.com/rmgutierrez' target='_blank' className='inline-flex items-center'>
+                  <img
+                    src='github-white.svg'
+                    alt='github'
+                    className='w-[24px] h-[24px] object-contain cursor-pointer'
+                  />
+                </a>
 
-          <a target='_blank' className='text-[20px] 
+
+            <a href='https://www.linkedin.com/in/raphael-gutierrez-b0a608261/' target='_blank' className='inline-flex items-center'>
+                  <img
+                    src='linkedin.svg'
+                    alt='github'
+                    className='w-[24px] h-[24px] object-contain cursor-pointer'
+                  />
+                </a>
+
+          <p className='text-[20px] 
         leading-[30px] text-white flex-wrap'>
           KC♡
-        </a>
+        </p>
 
           </div>
         </div>
