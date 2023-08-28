@@ -12,7 +12,7 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick, desc, link
       active === id ? 'lg:flex-[3.5] flex-[10]' :
       'lg:flex-[0.5] flex-[2]'
     } flex items-center justify-center min-w-[170px]
-    h-[700px] transition-[flex] duration-[0.2s]
+    h-[700px] transition-[flex] duration-[0.6s]
     ease-out-flex cursor-pointer`}
     onClick={() => handleClick(id)}
   >
@@ -57,9 +57,13 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick, desc, link
           </div>
         </div>
 
-        <p className={`text-white mt-5 text-lg text-justify`}>
+        <motion.p 
+        initial={{ opacity: 0, x:-10}}
+        animate={{ opacity: 1, x:0}}
+        transition={{ duration: 1.5 }}
+        className={`text-white mt-5 text-lg text-justify`}>
           {desc}
-        </p>
+        </motion.p>
 
 
         <p className='text-white absolute right-[20px] bottom-[9px] italic font-bold'>
