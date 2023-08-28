@@ -60,7 +60,7 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick, desc, link
         <motion.p 
         initial={{ opacity: 0, x:-10}}
         animate={{ opacity: 1, x:0}}
-        transition={{ duration: 1.5 }}
+        transition={{ delay: 0.5 }}
         className={`text-white mt-5 text-lg text-justify`}>
           {desc}
         </motion.p>
