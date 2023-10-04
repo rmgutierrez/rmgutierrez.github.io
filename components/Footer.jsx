@@ -72,7 +72,7 @@ const Footer = () => (
                   <img
                     src='github-white.svg'
                     alt='github'
-                    className='w-[24px] h-[24px] object-contain cursor-pointer hover:opacity-60 transitiion-all'
+                    className='w-[24px] h-[24px] object-contain cursor-pointer hover:opacity-60 transition-all'
                   />
                 </a>
 
@@ -81,7 +81,7 @@ const Footer = () => (
                   <img
                     src='linkedin.svg'
                     alt='github'
-                    className='w-[24px] h-[24px] object-contain cursor-pointer hover:opacity-60 transitiion-all'
+                    className='w-[24px] h-[24px] object-contain cursor-pointer hover:opacity-60 transition-all'
                   />
                 </a>
 
