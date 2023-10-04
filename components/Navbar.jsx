@@ -20,7 +20,7 @@ const Navbar = () => (
         />
 
         <a href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab' target='_blank' className='font-extrabold text-[24px] 
-        leading-[30px] text-white absolute left-[50%] translate-x-50'>
+        leading-[30px] text-white absolute left-[49%] translate-x-50'>
           RG
         </a>
 
@@ -30,7 +30,7 @@ const Navbar = () => (
                   <img
                     src='github-white.svg'
                     alt='github'
-                    className='w-[24px] h-[24px] object-contain cursor-pointer'
+                    className='w-[24px] h-[24px] object-contain cursor-pointer hover:opacity-60 transitiion-all'
                   />
                 </a>
 
@@ -39,7 +39,7 @@ const Navbar = () => (
                   <img
                     src='linkedin.svg'
                     alt='github'
-                    className='w-[24px] h-[24px] object-contain cursor-pointer'
+                    className='w-[24px] h-[24px] object-contain cursor-pointer hover:opacity-60 transition-all'
                   />
                 </a>
 
