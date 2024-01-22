@@ -26,7 +26,7 @@ const Feedback = () => (
           leading-[39px] text-white text-center'>
             As a CS student from the UofA, I come across multiple
             people who share the same goals and interest as me, connect
-            with me on <a href='https://www.linkedin.com/in/raphael-gutierrez-b0a608261/' target='_blank' className='underline hover:font-bold transition-all duration-75'>linked in!</a>
+            with me on <a href='https://www.linkedin.com/in/raphael-gutierrez-b0a608261/' target='_blank' className='underline hover:text-[rgba(255,255,255,0.75)] transition-all duration-75'>linked in!</a>
           </p>
         </div>
       </motion.div>
