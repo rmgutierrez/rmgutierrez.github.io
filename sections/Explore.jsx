@@ -9,7 +9,7 @@ import { staggerContainer } from '../utils/motion';
 import { exploreWorlds} from '../constants';
 
 const Explore = () => {
-  const [active, setActive] = useState('world-3')
+  const [active, setActive] = useState('world-4')
   return(
   <section className={`${styles.paddings}`}
   id='explore'>

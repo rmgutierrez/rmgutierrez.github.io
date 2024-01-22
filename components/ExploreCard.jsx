@@ -24,7 +24,7 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick, desc, link
     {active !== id ? (
       
       <div className='absolute bottom-0 p-4 justify-start w-full h-full flex-row
-      bg-gradient-to-b from-[rgba(0,0,0,0.0)] to-[rgba(0,0,0,0.9)] rounded-[10px] border-[3px] border-green-300/30 hover:border-[rgba(255,255,255,0.68)] 
+      bg-gradient-to-b from-[rgba(0,0,0,0.0)] to-[rgba(0,0,0,0.9)] rounded-[10px] border-[2px] border-green-800 hover:border-[rgba(255,255,255,0.68)] 
       transition-all duration-200'>
 
         <h3 className='font-semibold sm:text-[26px]
@@ -38,7 +38,7 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick, desc, link
 
     ) : (
       <div className='absolute bottom-0 p-4 justify-start w-full h-full flex-row
-      bg-[rgba(0,0,0,0.7)] rounded-[10px] border-[3px] border-[rgba(255,255,255,0.68)]'>
+      bg-[rgba(0,0,0,0.7)] rounded-[10px] border-[2px] border-[rgba(255,255,255,0.68)]'>
         <div className='flex col'>
 
             <a href={link} target='_blank 'className={`${styles.flexCenter} h-[60px] w-[60px] rounded-[50px] glassmorphism 
