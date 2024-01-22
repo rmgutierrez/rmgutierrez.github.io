@@ -23,11 +23,14 @@ export const exploreWorlds = [
     link: '/Hero',
     util: 'NextJs, Tailwind CSS, Framer Motion',
   },
-  // {
-  //   id: 'world-4',
-  //   imgUrl: '/planet-04.png',
-  //   title: 'Paradise Island',
-  // },
+  {
+    id: 'world-4',
+    imgUrl: '/distributed.png',
+    title: 'Distributed',
+    desc: 'In collaboration with a team of 5, we developed a social networking application designed to enable post sharing across various servers. Leading the front-end design and implementation, I focused on crafting a user-friendly and visually appealing interface, utilizing TypeScript, React, and Material UI to enhance the interactive user experience. We used Python and Django framework to construct the backend while using Axios to assist our API calls. The web application allows for posting plain text, markdown, or images, commenting on the posts, liking posts and comments, as well as following other users.',
+    link: 'https://github.com/uofa-cmput404/404f23project-404-team-not-found',
+    util: 'React, Material UI, Typescript, Python, Django, Django REST Framework, CSS, Axios'
+  },
   // {
   //   id: 'world-5',
   //   imgUrl: '/planet-05.png',
@@ -56,26 +59,26 @@ export const newFeatures = [
   },
 ];
 
-export const insights = [
-  {
-    imgUrl: '/planet-06.png',
-    title: 'The launch of the Metaverse makes Elon musk ketar-ketir',
-    subtitle:
-        'Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Diam maecenas sed enim ut sem viverra alique.',
-  },
-  {
-    imgUrl: '/planet-07.png',
-    title: '7 tips to easily master the madness of the Metaverse',
-    subtitle:
-        'Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum',
-  },
-  {
-    imgUrl: '/planet-08.png',
-    title: 'With one platform you can explore the whole world virtually',
-    subtitle:
-        'Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem',
-  },
-];
+// export const insights = [
+//   {
+//     imgUrl: '/planet-06.png',
+//     title: 'The launch of the Metaverse makes Elon musk ketar-ketir',
+//     subtitle:
+//         'Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Diam maecenas sed enim ut sem viverra alique.',
+//   },
+//   {
+//     imgUrl: '/planet-07.png',
+//     title: '7 tips to easily master the madness of the Metaverse',
+//     subtitle:
+//         'Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum',
+//   },
+//   {
+//     imgUrl: '/planet-08.png',
+//     title: 'With one platform you can explore the whole world virtually',
+//     subtitle:
+//         'Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem',
+//   },
+// ];
 
 export const socials = [
   {
