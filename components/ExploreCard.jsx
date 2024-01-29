@@ -39,8 +39,8 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick, desc, link
     ) : (
       <div className='absolute bottom-0 p-4 justify-start w-full h-full flex-row
       bg-[rgba(0,0,0,0.7)] rounded-[10px] border-[2px] border-[rgba(255,255,255,0.68)]'>
-        <div className='flex col'>
-
+        <motion.div 
+        className='flex col'>
             <a href={link} target='_blank 'className={`${styles.flexCenter} h-[60px] w-[60px] rounded-[50px] glassmorphism 
           `}>
               <img
@@ -55,7 +55,23 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick, desc, link
               {title}
             </h2>
           </div>
-        </div>
+
+          {id === 'world-4' && (
+              <motion.a 
+              initial={{ opacity: 0, x:-10}}
+              animate={{ opacity: 1, x:0}}
+              transition={{ delay: 0.5 }}
+              href={'https://distributed-network-37d054f03cf4.herokuapp.com/login'} 
+              target='_blank'
+              className={`${styles.flexCenter} h-[60px] w-[60px] rounded-[50px] ml-auto hover:bg-[rgba(255,255,255,0.20)] transition-none`}>
+                  <img
+                    src='/link.svg'
+                    alt='headset'
+                    className='w-[60%] h-[60%] flex object-center'
+                  />
+                </motion.a>
+          )}
+        </motion.div>
 
         <motion.p 
         initial={{ opacity: 0, x:-10}}
@@ -66,9 +82,13 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick, desc, link
         </motion.p>
 
 
-        <p className='text-white absolute right-[20px] bottom-[9px] italic font-bold'>
+        <motion.p 
+        initial={{ opacity: 0, x:-10}}
+        animate={{ opacity: 1, x:0}}
+        transition={{ delay: 0.5 }}
+        className='text-white absolute right-[20px] bottom-[9px] italic font-bold'>
           {util}
-        </p>
+        </motion.p>
       </div>
     )}
   </motion.div>
