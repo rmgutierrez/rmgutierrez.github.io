@@ -128,3 +128,10 @@ body {
 .optimize-animation {
   will-change: transform, opacity;
 }
+
+@media (max-width: 768px) {
+  .backdrop-blur-sm {
+    backdrop-filter: none !important;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+  }
+}

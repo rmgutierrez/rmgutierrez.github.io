@@ -37,6 +37,8 @@ const Hero = () => (
           className=' sm:h-[400px] h-[250px] z-10 rounded-full mt-10 
           drop-shadow-2xl border-[4px] border-green-300/30
         hover:border-white transition-all duration-300'
+          loading="lazy"
+          decoding="async"
           />
 
 
