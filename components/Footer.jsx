@@ -37,12 +37,12 @@ const Footer = () => (
       <div className='flex items-center justify-center flex-wrap gap-2 mb-3 '>
 
         <CustomLink href='mailto:rmbgutierrez1@gmail.com' title='contact' className='font-normal md:text-[34px] 
-        text-[14px] text-white opacity-70 hover:opacity-100 transition-all' dir='left-0'/>
+        text-[14px] text-white opacity-70 hover:opacity-100 transition-all optimize-animation' dir='left-0'/>
 
         <p className='font-normal md:text-[34px] text-[14px] text-white opacity-70'> & </p>
 
         <CustomLink href='/raph_resume.pdf' title='resume' className='font-normal md:text-[34px] text-[14px]
-         text-white opacity-70 hover:opacity-100 transition-all' dir='right-0'/>
+         text-white opacity-70 hover:opacity-100 transition-all optimize-animation' dir='right-0'/>
 
 
         {/* <h4 className='font-normal md:text-[34px] text-[14px] text-white opacity-70'>contact & resume</h4> */}
@@ -72,7 +72,7 @@ const Footer = () => (
                   <img
                     src='github-white.svg'
                     alt='github'
-                    className='w-[24px] h-[24px] object-contain cursor-pointer hover:opacity-60 transition-all'
+                    className='w-[24px] h-[24px] object-contain cursor-pointer hover:opacity-60 transition-all optimize-animation'
                     loading="lazy"
                     decoding="async"
                   />
@@ -83,7 +83,7 @@ const Footer = () => (
                   <img
                     src='linkedin.svg'
                     alt='github'
-                    className='w-[24px] h-[24px] object-contain cursor-pointer hover:opacity-60 transition-all'
+                    className='w-[24px] h-[24px] object-contain cursor-pointer hover:opacity-60 transition-all optimize-animation'
                     loading="lazy"
                     decoding="async"
                   />

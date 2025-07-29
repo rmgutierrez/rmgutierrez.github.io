@@ -36,7 +36,7 @@ const Hero = () => (
           alt='cover'
           className=' sm:h-[400px] h-[250px] z-10 rounded-full mt-10 
           drop-shadow-2xl border-[4px] border-green-300/30
-        hover:border-white transition-all duration-300'
+        hover:border-white transition-all duration-300 optimize-animation'
           loading="lazy"
           decoding="async"
           />
