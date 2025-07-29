@@ -23,8 +23,9 @@ const About = () => (
         variants={fadeIn('up', 'tween', 0.2, 1)}
         className='z-0 mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white'
       >
-        I am a Computing Science student at the <span className='font-semibold text-white hover:text-gold transition-all optimize-animation duration-300'>University of Alberta. </span> 
-        I am interested in mobile and full-stack development, but leaning more into front-end and designing elegant and intuitive UI. Check out my projects below!
+        As a recent graduate of Computing Science at the <span className='font-semibold text-white hover:text-gold transition-all optimize-animation duration-300'>University of Alberta </span>
+        , I have a solid background in full-stack development, AI/ML, and system design. 
+        I love collaborating with others to create dependable, user-friendly software, and I have a strong interest in applying technology to address practical issues. 
       </motion.p>
 
       <motion.img
