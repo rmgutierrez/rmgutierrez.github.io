@@ -17,10 +17,13 @@ const Hero = () => (
     className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
       <div className='flex justify-center items-center flex-col relative z-10'>
-        <motion.h1 variants={textVariant(1.1)}
+        {/* <motion.h1 variants={textVariant(1.1)}
         className={styles.heroHeading}>
           Hi, I'm Raphael Gutierrez
-        </motion.h1>
+        </motion.h1> */}
+        <h1 className='typing text-6xl mb-10'>
+          Hi, I'm Raphael Gutierrez
+        </h1>
       </div>
 
       <motion.div 
@@ -35,10 +38,7 @@ const Hero = () => (
           src='/profile.png'
           alt='cover'
           className=' sm:h-[400px] h-[250px] z-10 rounded-full mt-10 
-          drop-shadow-2xl border-[4px] border-green-300/30
-        hover:border-white transition-all duration-300 optimize-animation'
-          loading="lazy"
-          decoding="async"
+          drop-shadow-2xl border-[4px] border-green-300/30'
           />
 
 

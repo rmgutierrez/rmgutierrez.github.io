@@ -59,7 +59,7 @@ export const projects = [
     id: 'tether',
     imgUrl: '/tether.jpg',
     title: 'Tether',
-    desc: 'You are here! This website contains some information about myself, my completed and ongoing projects, and the links to my socials. I utilized Next 13 and Tailwind CSS to design a website that is responsive and adaptive to different sized screens, with fluid animations in courtesy of Framer Motion',
+    desc: "Tether is a web app that lets you manage all your bank accounts in one place. Easily view transactions, track your finances, and transfer money between accounts without the hassle",
     link: '/Hero',
     util: 'Typescript, NextJs, Tailwind CSS, Appwrite, Plaid API, Sentry',
   },
@@ -69,7 +69,7 @@ export const projects = [
     title: 'Tandem',
     desc: "UNDER CONSTRUCTION - Tandem is Chrome extension that enhances your browsing experience using AI. It can summarize pages, answer questions about what you're reading, and help automate repetitive web tasks, all from a simple popup interface.",
     link: '/Hero',
-    util: 'Typescript, NextJs, Tailwind CSS, Appwrite, Plaid API, Sentry',
+    util: 'React, Vite, Typescript, Manifest v3, Supabase(?), OpenAI GPT API',
   },
 
 ];

@@ -16,7 +16,7 @@ const Page = () => (
 
 
     <div className='relative'>
-      <Feedback />
+      {/* <Feedback /> */}
     </div>
 
     <Footer />
