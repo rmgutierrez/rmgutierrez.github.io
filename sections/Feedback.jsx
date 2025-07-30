@@ -39,6 +39,8 @@ const Feedback = () => (
           src='/uofa.png'
           alt='planet-09'
           className='w-full lg:-h-[410px] h-auto min-h-[210px] object-cover rounded-[20px] brightness-75 blur-[1px]'
+          loading="lazy"
+          decoding="async"
         />
       </motion.div>
     </motion.div>

@@ -6,13 +6,13 @@ import { ExploreCard, TitleText, TypingText } from '../components';
 
 import styles from '../styles';
 import { staggerContainer } from '../utils/motion';
-import { exploreWorlds} from '../constants';
+import { projects } from '../constants';
 
-const Explore = () => {
-  const [active, setActive] = useState('fluenty')
+const Projects = () => {
+  const [active, setActive] = useState('tandem')
   return(
   <section className={`${styles.paddings}`}
-  id='explore'>
+  id='projects'>
     <motion.div
       variants={staggerContainer}
       initial='hidden'
@@ -20,13 +20,13 @@ const Explore = () => {
       viewport={{ once: true, amount: 0.25}}
       className={`${styles.innerWidth} mx-auto flex flex-col`}
     >
-      <TypingText title='Academic Projects'
+      <TypingText title='Personal Projects'
       textStyles='text-center'/>
 
       <div className='gradient-03'/>
 
       <div className='mt-[50px] flex lg:flex-row flex-col min-h-[70vh] gap-5'>
-        {exploreWorlds.map((world, index) => (
+        {projects.map((world, index) => (
           <ExploreCard
             key={world.id}
             {...world}
@@ -43,4 +43,4 @@ const Explore = () => {
 )
         };
 
-export default Explore;
+export default Projects;

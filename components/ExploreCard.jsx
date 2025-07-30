@@ -20,12 +20,14 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick, desc, link
       src={imgUrl}
       alt={title}
       className={`absolute w-full h-full object-cover rounded-[10px] border-[1px] border-forest ${active !== id ? 'blur-[1px] brightness-60' : ''}`}
+      loading="lazy"
+      decoding="async"
     />
     {active !== id ? (
       
       <div className='absolute bottom-0 p-4 justify-start w-full h-full flex-row
       bg-gradient-to-b from-[rgba(0,0,0,0.0)] to-[rgba(0,0,0,0.9)] rounded-[10px] border-[2px] border-green-800 hover:border-[rgba(255,255,255,0.68)] 
-      transition-all duration-200'>
+      transition-all duration-200 optimize-animation'>
 
         <h3 className='font-semibold sm:text-[26px]
         text-[18px] text-white absolute z-0
@@ -47,6 +49,8 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick, desc, link
                 src='/github-white.svg'
                 alt='headset'
                 className='w-[70%] h-[70%] flex object-center'
+                loading="lazy"
+                decoding="async"
               />
             </a>
 
@@ -68,6 +72,8 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick, desc, link
                     src='/link.svg'
                     alt='headset'
                     className='w-[60%] h-[60%] flex object-center'
+                    loading="lazy"
+                    decoding="async"
                   />
                 </motion.a>
           )}

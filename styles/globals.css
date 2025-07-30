@@ -105,3 +105,51 @@
   background: #26CF00;
   filter: blur(150px);
 }
+
+/* Ensure smooth rendering on Safari and Firefox */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent; /* Mobile tap delay fix */
+  box-sizing: border-box;
+}
+
+/* Optional: prevent double-tap zoom on iOS */
+body {
+  touch-action: manipulation;
+}
+
+/* Help browsers optimize animation targets */
+.optimize-animation {
+  will-change: transform, opacity;
+}
+
+@media (max-width: 768px) {
+  .backdrop-blur-sm {
+    backdrop-filter: none !important;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+  }
+}
+
+.typing {
+  color: white;
+  width: 13ch; /* Adjust based on your text length */
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid white;
+  animation: typing 1s steps(25) forwards, blink 0.8s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 15.7ch }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
