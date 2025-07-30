@@ -1,12 +1,44 @@
 export const exploreWorlds = [
   {
-    id: 'world-1',
-    imgUrl: '/foodegyCover.png',
+    id: 'fluenty',
+    imgUrl: '/fluenty.jpg',
+    title: 'Fluenty',
+    desc: 'Fluenty is a platform designed to enhance English language education in Brazil by connecting native Canadian English instructors with Brazilian students through their schools. Many students struggle with limited real-world interaction with native speakers, which affects their fluency and confidence. Fluenty aims to solve this by offering a web-based platform that facilitates session scheduling, progress tracking, gamified learning, and personalized feedback. The primary users of this platform will be school administrators, instructors, and students. The system will be accessed via a web browser and will integrate Zoom for virtual classes, allowing seamless communication between students and instructors.',
+    link: 'https://github.com/uofa-cmput404/404f23project-404-team-not-found',
+    util: 'React, Javascript, Python, Django, Tailwind CSS, PostgreSQL, Docker'
+  },
+  {
+    id: 'foodegy',
+    imgUrl: '/foodegyCover.jpg',
     title: 'Foodegy',
     desc: 'Foodegy is a user-friendly Android application designed to assist individuals in planning, organizing, and managing their meals and dietary preferences. Developed in collaboration with a team of 6 students, we utilized Android Studio, Java, and XML to design the user interface, and used firebase to implement the back-end. ',
     link: 'https://github.com/CMPUT301F22T26/Foodegy',
     util: 'Java, Firebase, XML, JUnit, Robotium, Android Studio',
   },
+  {
+    id: 'distributed',
+    imgUrl: '/distributed.jpg',
+    title: 'Distributed',
+    desc: 'In collaboration with a team of 5, we developed a social networking application designed to enable post sharing across various servers. Leading the front-end design and implementation, I focused on crafting a user-friendly and visually appealing interface, utilizing TypeScript, React, and Material UI to enhance the interactive user experience. We used Python and Django framework to construct the backend while using Axios to assist our API calls. The web application allows for posting plain text, markdown, or images, commenting on the posts, liking posts and comments, as well as following other users.',
+    link: 'https://github.com/uofa-cmput404/404f23project-404-team-not-found',
+    util: 'React, Material UI, Typescript, Python, Django, Django REST Framework, CSS, Axios'
+  },
+  {
+    id: 'heart',
+    imgUrl: '/heart.png',
+    title: 'Heart Disease',
+    desc: 'Heart disease is one of the leading causes of death globally. Early detection can significantly improve patient outcomes. In this project, we use a heart disease dataset to build and compare the performance of three classification models: Logistic Regression Support Vector Machine (SVM) Random Forest The project includes data preprocessing, hyperparameter tuning using GridSearchCV, model evaluation, and visualization of confusion matrices.',
+    link: 'https://github.com/uofa-cmput404/404f23project-404-team-not-found',
+    util: 'Python - Pandas, NumPy, scikit, matplotlib, seaborn'
+  },
+  // {
+  //   id: 'world-5',
+  //   imgUrl: '/planet-05.png',
+  //   title: 'Hawkins Labs',
+  // },
+];
+
+export const projects = [
   {
     id: 'world-2',
     imgUrl: '/control.png',
@@ -16,26 +48,30 @@ export const exploreWorlds = [
     util: 'Java, Firebase, XML, JUnit, Android Studio',  
   },
   {
-    id: 'world-3',
-    imgUrl: '/portfolio.png',
+    id: 'portfolio',
+    imgUrl: '/portfolio.jpg',
     title: 'Portfolio',
     desc: 'You are here! This website contains some information about myself, my completed and ongoing projects, and the links to my socials. I utilized Next 13 and Tailwind CSS to design a website that is responsive and adaptive to different sized screens, with fluid animations in courtesy of Framer Motion',
     link: '/Hero',
     util: 'NextJs, Tailwind CSS, Framer Motion',
   },
   {
-    id: 'world-4',
-    imgUrl: '/distributed.png',
-    title: 'Distributed',
-    desc: 'In collaboration with a team of 5, we developed a social networking application designed to enable post sharing across various servers. Leading the front-end design and implementation, I focused on crafting a user-friendly and visually appealing interface, utilizing TypeScript, React, and Material UI to enhance the interactive user experience. We used Python and Django framework to construct the backend while using Axios to assist our API calls. The web application allows for posting plain text, markdown, or images, commenting on the posts, liking posts and comments, as well as following other users.',
-    link: 'https://github.com/uofa-cmput404/404f23project-404-team-not-found',
-    util: 'React, Material UI, Typescript, Python, Django, Django REST Framework, CSS, Axios'
+    id: 'tether',
+    imgUrl: '/tether.jpg',
+    title: 'Tether',
+    desc: 'You are here! This website contains some information about myself, my completed and ongoing projects, and the links to my socials. I utilized Next 13 and Tailwind CSS to design a website that is responsive and adaptive to different sized screens, with fluid animations in courtesy of Framer Motion',
+    link: '/Hero',
+    util: 'Typescript, NextJs, Tailwind CSS, Appwrite, Plaid API, Sentry',
   },
-  // {
-  //   id: 'world-5',
-  //   imgUrl: '/planet-05.png',
-  //   title: 'Hawkins Labs',
-  // },
+  {
+    id: 'tandem',
+    imgUrl: '/soon.png',
+    title: 'Tandem',
+    desc: "UNDER CONSTRUCTION - Tandem is Chrome extension that enhances your browsing experience using AI. It can summarize pages, answer questions about what you're reading, and help automate repetitive web tasks, all from a simple popup interface.",
+    link: '/Hero',
+    util: 'Typescript, NextJs, Tailwind CSS, Appwrite, Plaid API, Sentry',
+  },
+
 ];
 
 export const startingFeatures = [

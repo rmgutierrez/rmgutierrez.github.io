@@ -1,5 +1,5 @@
 import { Footer, Navbar } from '../components';
-import { About, Explore, Feedback, GetStarted, Hero, Insights, WhatsNew, World } from '../sections';
+import { About, Explore, Projects, Feedback, Hero} from '../sections';
 
 const Page = () => (
   <div className='bg-gradient-to-br from-forest from-80% to-black to-20% overflow-hidden'>
